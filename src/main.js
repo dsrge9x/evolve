@@ -11388,16 +11388,16 @@ function spyCaught(i){
 }
 
 intervals['version_check'] = setInterval(function(){
-    $.ajax({
-        url: 'https://pmotschmann.github.io/Evolve/package.json',
-        type: 'GET',
-        dataType: 'json',
-        success: function(res){
-            if (res['version'] && res['version'] != global['version'] && !global['beta']){
-                $('#topBar .version > a').html(`<span class="has-text-warning">${loc(`update_avail`)}</span> v`+global.version+revision);
-            }
-        }
-    });
+    // $.ajax({
+    //     url: 'https://pmotschmann.github.io/Evolve/package.json',
+    //     type: 'GET',
+    //     dataType: 'json',
+    //     success: function(res){
+    //         if (res['version'] && res['version'] != global['version'] && !global['beta']){
+    //             $('#topBar .version > a').html(`<span class="has-text-warning">${loc(`update_avail`)}</span> v`+global.version+revision);
+    //         }
+    //     }
+    // });
 }, 900000);
 
 let changeLog = $(`<div class="infoBox"></div>`);

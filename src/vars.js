@@ -1212,7 +1212,7 @@ if (!global['settings']){
         q_merge: 'merge_nearby',
         cLabels: true,
         theme: 'gruvboxDark',
-        locale: 'en-US',
+        locale: 'zh-CN',
         icon: 'star'
     };
 }
@@ -1374,7 +1374,7 @@ if (!global.settings['showAchieve']){
     global.settings['showAchieve'] = false;
 }
 if (!global.settings['locale']){
-    global.settings['locale'] = 'en-us';
+    global.settings['locale'] = 'zh-CN';
 }
 if (typeof global.settings.pause === 'undefined'){
     global.settings['pause'] = false;
